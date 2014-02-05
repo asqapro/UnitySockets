@@ -6,7 +6,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Collections.Generic;
 
-public class client_class{ //class for the accept() threads (to avoid blocking)
+public class client_class{ 
 	public Socket connection = null;
 	public const int buff_size = 256;
 	public byte[] buff = new byte[buff_size];
