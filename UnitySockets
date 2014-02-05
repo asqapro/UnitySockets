@@ -60,7 +60,7 @@ public class Client : MonoBehaviour {
 	private static ManualResetEvent sendDone = new ManualResetEvent(false); //event state
 
 	void client(){
-		//IPAddress extern_ip = "l73.21.71"; //gets the local IP
+		//IPAddress extern_ip = ""; //gets the local IP
 		//IPEndPoint externEndPoint = new IPEndPoint(extern_ip, 0); //gets the local IP
 		Socket connection = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 		//client.BeginConnect(externEndPoint, new AsyncCallback(ConnectCallback), client);
